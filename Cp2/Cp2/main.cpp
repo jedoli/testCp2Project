@@ -1,6 +1,7 @@
 #include <process.h>
 #include <iostream>
 #include <windows.h>
+#include "Frame.h"
 using namespace std;
 class KeyEvent {
 private:
@@ -119,6 +120,7 @@ public:
 
 
 int main() {
+	/*
 	HANDLE handleA, handleB;
 	handleA = (HANDLE)_beginthreadex(0, 0, &mythread, (void*)0, 0, 0);
 	handleB = (HANDLE)_beginthreadex(0, 0, &keyEvent, (void*)0, 0, 0);
@@ -128,6 +130,19 @@ int main() {
 
 	CloseHandle(handleA);
 	CloseHandle(handleB);
-	
+	*/
+
+
+	try {
+		Frame *f1 = new Frame;
+		Frame *f2 = new Frame[10];
+
+		delete f1;
+		delete[] f2;
+	}
+	catch (string msg) {
+		cout << "Error msg : " << msg << endl;
+	}
+
 	return 0;
 }
