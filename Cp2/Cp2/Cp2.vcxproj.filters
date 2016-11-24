@@ -23,5 +23,8 @@
     <ClInclude Include="Frame.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="ExArray.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
